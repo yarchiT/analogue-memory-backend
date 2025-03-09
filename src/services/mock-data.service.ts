@@ -57,9 +57,44 @@ class MockDataService {
     return this.allItems
   }
 
+  // Get all memory items with pagination and sorting
+  getAllItemsPaginated(page: number, limit: number, sort: string): { items: MemoryItem[], total: number } {
+    // Sort items
+    const sortedItems = this.sortItems(this.allItems, sort)
+    
+    // Apply pagination
+    const startIndex = (page - 1) * limit
+    const endIndex = page * limit
+    const paginatedItems = sortedItems.slice(startIndex, endIndex)
+    
+    return {
+      items: paginatedItems,
+      total: this.allItems.length,
+    }
+  }
+
   // Get items by category ID
   getItemsByCategory(categoryId: string): MemoryItem[] {
     return this.allItems.filter(item => item.category === categoryId)
+  }
+
+  // Get items by category ID with pagination and sorting
+  getItemsByCategoryPaginated(categoryId: string, page: number, limit: number, sort: string): { items: MemoryItem[], total: number } {
+    // Filter items by category
+    const categoryItems = this.allItems.filter(item => item.category === categoryId)
+    
+    // Sort items
+    const sortedItems = this.sortItems(categoryItems, sort)
+    
+    // Apply pagination
+    const startIndex = (page - 1) * limit
+    const endIndex = page * limit
+    const paginatedItems = sortedItems.slice(startIndex, endIndex)
+    
+    return {
+      items: paginatedItems,
+      total: categoryItems.length,
+    }
   }
 
   // Get an item by ID
@@ -98,6 +133,32 @@ class MockDataService {
     // In a real app, we would verify the password
     const user = this.users.find(user => user.email === email)
     return user || null
+  }
+
+  // Helper method to sort items
+  private sortItems(items: MemoryItem[], sort: string): MemoryItem[] {
+    const isDesc = sort.startsWith('-')
+    const sortField = isDesc ? sort.substring(1) : sort
+    
+    return [...items].sort((a, b) => {
+      let comparison = 0
+      
+      switch (sortField) {
+        case 'name':
+          comparison = a.name.localeCompare(b.name)
+          break
+        case 'popularity':
+          comparison = a.popularity - b.popularity
+          break
+        case 'year':
+          comparison = (a.year || 0) - (b.year || 0)
+          break
+        default:
+          comparison = a.name.localeCompare(b.name)
+      }
+      
+      return isDesc ? -comparison : comparison
+    })
   }
 }
 

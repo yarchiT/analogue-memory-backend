@@ -1,13 +1,16 @@
-import { Request, Response } from 'express'
+import { Request, Response, NextFunction } from 'express'
 import mockDataService from '../services/mock-data.service'
 import logger from '../utils/logger'
+import { createNotFoundError, createInternalServerError } from '../utils/error.utils'
 
-// Get all categories
-export const getAllCategories = (req: Request, res: Response) => {
+/**
+ * Get all categories
+ */
+export const getAllCategories = (req: Request, res: Response, next: NextFunction): void => {
   try {
     const categories = mockDataService.getCategories()
     
-    return res.status(200).json({
+    res.status(200).json({
       status: 'success',
       results: categories.length,
       data: {
@@ -16,27 +19,24 @@ export const getAllCategories = (req: Request, res: Response) => {
     })
   } catch (error) {
     logger.error('Error fetching categories:', error)
-    return res.status(500).json({
-      status: 'error',
-      message: 'Failed to fetch categories',
-    })
+    next(createInternalServerError('Failed to fetch categories'))
   }
 }
 
-// Get a category by ID
-export const getCategoryById = (req: Request, res: Response) => {
+/**
+ * Get a category by ID
+ */
+export const getCategoryById = (req: Request, res: Response, next: NextFunction): void => {
   try {
     const { id } = req.params
     const category = mockDataService.getCategoryById(id)
     
     if (!category) {
-      return res.status(404).json({
-        status: 'fail',
-        message: `Category with ID ${id} not found`,
-      })
+      next(createNotFoundError(`Category with ID ${id} not found`))
+      return
     }
     
-    return res.status(200).json({
+    res.status(200).json({
       status: 'success',
       data: {
         category,
@@ -44,9 +44,6 @@ export const getCategoryById = (req: Request, res: Response) => {
     })
   } catch (error) {
     logger.error(`Error fetching category with ID ${req.params.id}:`, error)
-    return res.status(500).json({
-      status: 'error',
-      message: 'Failed to fetch category',
-    })
+    next(createInternalServerError('Failed to fetch category'))
   }
 } 

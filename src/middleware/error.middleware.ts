@@ -1,37 +1,45 @@
 import { Request, Response, NextFunction } from 'express'
 import logger from '../utils/logger'
+import { AppError } from '../utils/error.utils'
 
-interface AppError extends Error {
-  statusCode?: number
-  status?: string
-  isOperational?: boolean
-}
-
+/**
+ * Global error handler middleware
+ */
 export const errorHandler = (
-  err: AppError,
+  err: Error,
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
-  err.statusCode = err.statusCode || 500
-  err.status = err.status || 'error'
+  // Default error values
+  let statusCode = 500
+  let status = 'error'
+  let message = err.message || 'Something went wrong'
+  let stack = err.stack
+
+  // Check if error is an AppError
+  if (err instanceof AppError) {
+    statusCode = err.statusCode
+    status = err.status
+  }
 
   // Log the error
-  logger.error(`${err.statusCode} - ${err.message} - ${req.originalUrl} - ${req.method} - ${req.ip}`)
-  logger.error(err.stack || '')
+  logger.error(`${statusCode} - ${message} - ${req.originalUrl} - ${req.method} - ${req.ip}`)
+  if (stack) {
+    logger.error(stack)
+  }
 
   // Send error response
-  res.status(err.statusCode).json({
-    status: err.status,
-    message: err.message,
-    stack: process.env.NODE_ENV === 'development' ? err.stack : undefined,
+  res.status(statusCode).json({
+    status,
+    message,
+    stack: process.env.NODE_ENV === 'development' ? stack : undefined,
   })
 }
 
-// 404 Not Found middleware
+/**
+ * 404 Not Found middleware
+ */
 export const notFound = (req: Request, res: Response, next: NextFunction) => {
-  const error = new Error(`Not Found - ${req.originalUrl}`) as AppError
-  error.statusCode = 404
-  error.status = 'fail'
-  next(error)
+  next(new AppError(`Not Found - ${req.originalUrl}`, 404))
 } 

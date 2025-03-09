@@ -11,6 +11,10 @@ interface Config {
   jwtSecret: string
   jwtExpiresIn: string
   logLevel: string
+  corsAllowedOrigins: string
+  rateLimitMax: number
+  rateLimitWindowMs: number
+  requestTimeout: number
 }
 
 const config: Config = {
@@ -20,6 +24,10 @@ const config: Config = {
   jwtSecret: process.env.JWT_SECRET || 'your-secret-key',
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || '1d',
   logLevel: process.env.LOG_LEVEL || 'info',
+  corsAllowedOrigins: process.env.CORS_ALLOWED_ORIGINS || '*',
+  rateLimitMax: parseInt(process.env.RATE_LIMIT_MAX || '100', 10),
+  rateLimitWindowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '60000', 10), // 1 minute
+  requestTimeout: parseInt(process.env.REQUEST_TIMEOUT || '30000', 10), // 30 seconds
 }
 
 export default config 

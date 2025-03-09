@@ -1,9 +1,12 @@
-import { Request, Response } from 'express'
+import { Request, Response, NextFunction } from 'express'
 import mockDataService from '../services/mock-data.service'
 import logger from '../utils/logger'
+import { createNotFoundError, createBadRequestError, createUnauthorizedError, createInternalServerError } from '../utils/error.utils'
 
-// Get all users
-export const getAllUsers = (req: Request, res: Response) => {
+/**
+ * Get all users
+ */
+export const getAllUsers = (req: Request, res: Response, next: NextFunction): void => {
   try {
     const users = mockDataService.getUsers()
     
@@ -13,7 +16,7 @@ export const getAllUsers = (req: Request, res: Response) => {
       return userWithoutEmail
     })
     
-    return res.status(200).json({
+    res.status(200).json({
       status: 'success',
       results: sanitizedUsers.length,
       data: {
@@ -22,30 +25,27 @@ export const getAllUsers = (req: Request, res: Response) => {
     })
   } catch (error) {
     logger.error('Error fetching users:', error)
-    return res.status(500).json({
-      status: 'error',
-      message: 'Failed to fetch users',
-    })
+    next(createInternalServerError('Failed to fetch users'))
   }
 }
 
-// Get a user by ID
-export const getUserById = (req: Request, res: Response) => {
+/**
+ * Get a user by ID
+ */
+export const getUserById = (req: Request, res: Response, next: NextFunction): void => {
   try {
     const { id } = req.params
     const user = mockDataService.getUserById(id)
     
     if (!user) {
-      return res.status(404).json({
-        status: 'fail',
-        message: `User with ID ${id} not found`,
-      })
+      next(createNotFoundError(`User with ID ${id} not found`))
+      return
     }
     
     // Remove sensitive information
     const { email, ...userWithoutEmail } = user
     
-    return res.status(200).json({
+    res.status(200).json({
       status: 'success',
       data: {
         user: userWithoutEmail,
@@ -53,30 +53,27 @@ export const getUserById = (req: Request, res: Response) => {
     })
   } catch (error) {
     logger.error(`Error fetching user with ID ${req.params.id}:`, error)
-    return res.status(500).json({
-      status: 'error',
-      message: 'Failed to fetch user',
-    })
+    next(createInternalServerError('Failed to fetch user'))
   }
 }
 
-// Get a user by username
-export const getUserByUsername = (req: Request, res: Response) => {
+/**
+ * Get a user by username
+ */
+export const getUserByUsername = (req: Request, res: Response, next: NextFunction): void => {
   try {
     const { username } = req.params
     const user = mockDataService.getUserByUsername(username)
     
     if (!user) {
-      return res.status(404).json({
-        status: 'fail',
-        message: `User with username ${username} not found`,
-      })
+      next(createNotFoundError(`User with username ${username} not found`))
+      return
     }
     
     // Remove sensitive information
     const { email, ...userWithoutEmail } = user
     
-    return res.status(200).json({
+    res.status(200).json({
       status: 'success',
       data: {
         user: userWithoutEmail,
@@ -84,38 +81,33 @@ export const getUserByUsername = (req: Request, res: Response) => {
     })
   } catch (error) {
     logger.error(`Error fetching user with username ${req.params.username}:`, error)
-    return res.status(500).json({
-      status: 'error',
-      message: 'Failed to fetch user',
-    })
+    next(createInternalServerError('Failed to fetch user'))
   }
 }
 
-// Mock login
-export const login = (req: Request, res: Response) => {
+/**
+ * Mock login
+ */
+export const login = (req: Request, res: Response, next: NextFunction): void => {
   try {
     const { email, password } = req.body
     
     if (!email || !password) {
-      return res.status(400).json({
-        status: 'fail',
-        message: 'Email and password are required',
-      })
+      next(createBadRequestError('Email and password are required'))
+      return
     }
     
     const user = mockDataService.authenticate(email, password)
     
     if (!user) {
-      return res.status(401).json({
-        status: 'fail',
-        message: 'Invalid email or password',
-      })
+      next(createUnauthorizedError('Invalid email or password'))
+      return
     }
     
     // In a real app, we would generate a JWT token here
     const token = 'mock-jwt-token-' + Date.now()
     
-    return res.status(200).json({
+    res.status(200).json({
       status: 'success',
       data: {
         token,
@@ -124,9 +116,6 @@ export const login = (req: Request, res: Response) => {
     })
   } catch (error) {
     logger.error('Error during login:', error)
-    return res.status(500).json({
-      status: 'error',
-      message: 'Failed to authenticate',
-    })
+    next(createInternalServerError('Failed to authenticate'))
   }
 } 
