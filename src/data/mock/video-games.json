@@ -6,7 +6,7 @@
     "category": "cat-001",
     "decade": "1990s",
     "year": 1996,
-    "imageUrl": "https://example.com/images/items/super-mario-64.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 95,
     "tags": ["Nintendo", "Platform", "Mario", "N64"]
   },
@@ -17,7 +17,7 @@
     "category": "cat-001",
     "decade": "1990s",
     "year": 1998,
-    "imageUrl": "https://example.com/images/items/zelda-ocarina.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 98,
     "tags": ["Nintendo", "Adventure", "Zelda", "N64"]
   },
@@ -28,7 +28,7 @@
     "category": "cat-001",
     "decade": "1990s",
     "year": 1997,
-    "imageUrl": "https://example.com/images/items/ff7.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 96,
     "tags": ["PlayStation", "RPG", "Square", "JRPG"]
   },
@@ -39,7 +39,7 @@
     "category": "cat-001",
     "decade": "1990s",
     "year": 1996,
-    "imageUrl": "https://example.com/images/items/pokemon-red-blue.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 92,
     "tags": ["Nintendo", "RPG", "Game Boy", "Pokémon"]
   },
@@ -50,7 +50,7 @@
     "category": "cat-001",
     "decade": "1990s",
     "year": 1997,
-    "imageUrl": "https://example.com/images/items/goldeneye.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 90,
     "tags": ["Nintendo", "FPS", "N64", "Multiplayer"]
   },
@@ -61,7 +61,7 @@
     "category": "cat-001",
     "decade": "2000s",
     "year": 2001,
-    "imageUrl": "https://example.com/images/items/halo.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 94,
     "tags": ["Xbox", "FPS", "Microsoft", "Sci-Fi"]
   },
@@ -72,7 +72,7 @@
     "category": "cat-001",
     "decade": "2000s",
     "year": 2004,
-    "imageUrl": "https://example.com/images/items/gta-san-andreas.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 93,
     "tags": ["PlayStation", "Open World", "Rockstar", "Action"]
   },
@@ -83,7 +83,7 @@
     "category": "cat-001",
     "decade": "2000s",
     "year": 2004,
-    "imageUrl": "https://example.com/images/items/wow.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 97,
     "tags": ["PC", "MMORPG", "Blizzard", "Fantasy"]
   },
@@ -94,7 +94,7 @@
     "category": "cat-001",
     "decade": "2000s",
     "year": 2000,
-    "imageUrl": "https://example.com/images/items/tony-hawk-2.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 89,
     "tags": ["PlayStation", "Sports", "Skateboarding", "Activision"]
   },
@@ -105,7 +105,7 @@
     "category": "cat-001",
     "decade": "1990s",
     "year": 1998,
-    "imageUrl": "https://example.com/images/items/metal-gear-solid.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 91,
     "tags": ["PlayStation", "Stealth", "Konami", "Action"]
   }

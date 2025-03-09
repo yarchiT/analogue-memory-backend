@@ -6,7 +6,7 @@
     "category": "cat-002",
     "decade": "1990s",
     "year": 1996,
-    "imageUrl": "https://example.com/images/items/tamagotchi.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 94,
     "tags": ["Digital Pet", "Bandai", "Electronic", "Japan"]
   },
@@ -17,7 +17,7 @@
     "category": "cat-002",
     "decade": "1990s",
     "year": 1993,
-    "imageUrl": "https://example.com/images/items/beanie-babies.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 96,
     "tags": ["Plush", "Collectible", "Ty", "Stuffed Animals"]
   },
@@ -28,7 +28,7 @@
     "category": "cat-002",
     "decade": "1990s",
     "year": 1998,
-    "imageUrl": "https://example.com/images/items/furby.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 92,
     "tags": ["Electronic", "Robot", "Tiger Electronics", "Interactive"]
   },
@@ -39,7 +39,7 @@
     "category": "cat-002",
     "decade": "1990s",
     "year": 1995,
-    "imageUrl": "https://example.com/images/items/pogs.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 88,
     "tags": ["Game", "Collectible", "Cardboard", "Playground"]
   },
@@ -50,7 +50,7 @@
     "category": "cat-002",
     "decade": "1990s",
     "year": 1990,
-    "imageUrl": "https://example.com/images/items/super-soaker.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 91,
     "tags": ["Water Gun", "Outdoor", "Summer", "Hasbro"]
   },
@@ -61,7 +61,7 @@
     "category": "cat-002",
     "decade": "2000s",
     "year": 2001,
-    "imageUrl": "https://example.com/images/items/bratz.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 87,
     "tags": ["Dolls", "Fashion", "MGA", "Girls"]
   },
@@ -72,7 +72,7 @@
     "category": "cat-002",
     "decade": "2000s",
     "year": 2000,
-    "imageUrl": "https://example.com/images/items/beyblades.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 89,
     "tags": ["Spinning Tops", "Battle", "Takara Tomy", "Hasbro"]
   },
@@ -83,7 +83,7 @@
     "category": "cat-002",
     "decade": "2000s",
     "year": 2000,
-    "imageUrl": "https://example.com/images/items/razor-scooter.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 93,
     "tags": ["Scooter", "Outdoor", "Transportation", "Aluminum"]
   },
@@ -94,7 +94,7 @@
     "category": "cat-002",
     "decade": "2000s",
     "year": 2002,
-    "imageUrl": "https://example.com/images/items/yugioh-cards.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 90,
     "tags": ["Card Game", "Collectible", "Konami", "Anime"]
   },
@@ -105,7 +105,7 @@
     "category": "cat-002",
     "decade": "1990s",
     "year": 1996,
-    "imageUrl": "https://example.com/images/items/tickle-me-elmo.jpg",
+    "imageUrl": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     "popularity": 95,
     "tags": ["Plush", "Sesame Street", "Interactive", "Tyco"]
   }
