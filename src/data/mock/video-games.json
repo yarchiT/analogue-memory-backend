@@ -1,0 +1,112 @@
+[
+  {
+    "id": "vg-001",
+    "name": "Super Mario 64",
+    "description": "A 1996 platform game for the Nintendo 64 and the first Super Mario game to feature 3D gameplay.",
+    "category": "cat-001",
+    "decade": "1990s",
+    "year": 1996,
+    "imageUrl": "https://example.com/images/items/super-mario-64.jpg",
+    "popularity": 95,
+    "tags": ["Nintendo", "Platform", "Mario", "N64"]
+  },
+  {
+    "id": "vg-002",
+    "name": "The Legend of Zelda: Ocarina of Time",
+    "description": "A 1998 action-adventure game developed by Nintendo for the Nintendo 64, widely regarded as one of the greatest video games ever made.",
+    "category": "cat-001",
+    "decade": "1990s",
+    "year": 1998,
+    "imageUrl": "https://example.com/images/items/zelda-ocarina.jpg",
+    "popularity": 98,
+    "tags": ["Nintendo", "Adventure", "Zelda", "N64"]
+  },
+  {
+    "id": "vg-003",
+    "name": "Final Fantasy VII",
+    "description": "A 1997 role-playing video game developed by Square for the PlayStation, often credited with popularizing the RPG genre outside of Japan.",
+    "category": "cat-001",
+    "decade": "1990s",
+    "year": 1997,
+    "imageUrl": "https://example.com/images/items/ff7.jpg",
+    "popularity": 96,
+    "tags": ["PlayStation", "RPG", "Square", "JRPG"]
+  },
+  {
+    "id": "vg-004",
+    "name": "Pokémon Red and Blue",
+    "description": "The first installments of the Pokémon video game series, released in 1996 for the Game Boy, starting a global phenomenon.",
+    "category": "cat-001",
+    "decade": "1990s",
+    "year": 1996,
+    "imageUrl": "https://example.com/images/items/pokemon-red-blue.jpg",
+    "popularity": 92,
+    "tags": ["Nintendo", "RPG", "Game Boy", "Pokémon"]
+  },
+  {
+    "id": "vg-005",
+    "name": "GoldenEye 007",
+    "description": "A 1997 first-person shooter developed by Rare for the Nintendo 64, based on the 1995 James Bond film GoldenEye.",
+    "category": "cat-001",
+    "decade": "1990s",
+    "year": 1997,
+    "imageUrl": "https://example.com/images/items/goldeneye.jpg",
+    "popularity": 90,
+    "tags": ["Nintendo", "FPS", "N64", "Multiplayer"]
+  },
+  {
+    "id": "vg-006",
+    "name": "Halo: Combat Evolved",
+    "description": "A 2001 first-person shooter developed by Bungie and published by Microsoft Game Studios for the Xbox, launching one of the most successful gaming franchises.",
+    "category": "cat-001",
+    "decade": "2000s",
+    "year": 2001,
+    "imageUrl": "https://example.com/images/items/halo.jpg",
+    "popularity": 94,
+    "tags": ["Xbox", "FPS", "Microsoft", "Sci-Fi"]
+  },
+  {
+    "id": "vg-007",
+    "name": "Grand Theft Auto: San Andreas",
+    "description": "A 2004 action-adventure game developed by Rockstar North and published by Rockstar Games, known for its open-world gameplay and cultural impact.",
+    "category": "cat-001",
+    "decade": "2000s",
+    "year": 2004,
+    "imageUrl": "https://example.com/images/items/gta-san-andreas.jpg",
+    "popularity": 93,
+    "tags": ["PlayStation", "Open World", "Rockstar", "Action"]
+  },
+  {
+    "id": "vg-008",
+    "name": "World of Warcraft",
+    "description": "A massively multiplayer online role-playing game released by Blizzard Entertainment in 2004, becoming one of the most popular MMORPGs of all time.",
+    "category": "cat-001",
+    "decade": "2000s",
+    "year": 2004,
+    "imageUrl": "https://example.com/images/items/wow.jpg",
+    "popularity": 97,
+    "tags": ["PC", "MMORPG", "Blizzard", "Fantasy"]
+  },
+  {
+    "id": "vg-009",
+    "name": "Tony Hawk's Pro Skater 2",
+    "description": "A 2000 skateboarding video game developed by Neversoft and published by Activision, known for its gameplay, soundtrack, and cultural influence.",
+    "category": "cat-001",
+    "decade": "2000s",
+    "year": 2000,
+    "imageUrl": "https://example.com/images/items/tony-hawk-2.jpg",
+    "popularity": 89,
+    "tags": ["PlayStation", "Sports", "Skateboarding", "Activision"]
+  },
+  {
+    "id": "vg-010",
+    "name": "Metal Gear Solid",
+    "description": "A 1998 stealth game developed by Konami for the PlayStation, known for its cinematic experience and complex narrative.",
+    "category": "cat-001",
+    "decade": "1990s",
+    "year": 1998,
+    "imageUrl": "https://example.com/images/items/metal-gear-solid.jpg",
+    "popularity": 91,
+    "tags": ["PlayStation", "Stealth", "Konami", "Action"]
+  }
+] 

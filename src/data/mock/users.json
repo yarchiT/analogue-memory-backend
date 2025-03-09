@@ -1,0 +1,172 @@
+[
+  {
+    "id": "user-001",
+    "username": "nostalgic90skid",
+    "email": "nostalgic90s@example.com",
+    "birthYear": 1985,
+    "location": {
+      "country": "United States",
+      "region": "California"
+    },
+    "joinDate": "2023-01-15T08:30:00Z",
+    "collection": [
+      {
+        "itemId": "vg-001",
+        "dateAdded": "2023-01-16T14:22:00Z",
+        "personalNote": "Spent countless hours collecting stars in this game. The penguin race was my favorite!"
+      },
+      {
+        "itemId": "vg-003",
+        "dateAdded": "2023-01-18T19:45:00Z",
+        "personalNote": "My first RPG. I cried when Aerith died."
+      },
+      {
+        "itemId": "toy-002",
+        "dateAdded": "2023-02-05T11:30:00Z",
+        "personalNote": "Had a collection of over 50 Beanie Babies. Still have my Princess Diana bear!"
+      },
+      {
+        "itemId": "toy-005",
+        "dateAdded": "2023-02-10T16:15:00Z",
+        "personalNote": "Summer wasn't complete without Super Soaker battles in the neighborhood."
+      }
+    ],
+    "following": ["user-002", "user-003"],
+    "followers": ["user-002", "user-004", "user-005"]
+  },
+  {
+    "id": "user-002",
+    "username": "retrogamer2000",
+    "email": "retrogamer@example.com",
+    "birthYear": 1988,
+    "location": {
+      "country": "United Kingdom",
+      "region": "London"
+    },
+    "joinDate": "2023-01-20T12:45:00Z",
+    "collection": [
+      {
+        "itemId": "vg-002",
+        "dateAdded": "2023-01-21T08:15:00Z",
+        "personalNote": "Best game ever made. The Water Temple still gives me nightmares."
+      },
+      {
+        "itemId": "vg-005",
+        "dateAdded": "2023-01-25T20:30:00Z",
+        "personalNote": "Multiplayer sessions with friends after school were the highlight of my day."
+      },
+      {
+        "itemId": "toy-003",
+        "dateAdded": "2023-02-08T14:20:00Z",
+        "personalNote": "My Furby would wake up in the middle of the night and scare everyone in the house."
+      }
+    ],
+    "following": ["user-001", "user-003", "user-005"],
+    "followers": ["user-001", "user-003"]
+  },
+  {
+    "id": "user-003",
+    "username": "millennialmemories",
+    "email": "millennial@example.com",
+    "birthYear": 1992,
+    "location": {
+      "country": "Canada",
+      "region": "Ontario"
+    },
+    "joinDate": "2023-02-01T09:20:00Z",
+    "collection": [
+      {
+        "itemId": "vg-006",
+        "dateAdded": "2023-02-02T15:45:00Z",
+        "personalNote": "First Xbox game I ever played. Changed my life forever."
+      },
+      {
+        "itemId": "vg-008",
+        "dateAdded": "2023-02-05T18:30:00Z",
+        "personalNote": "Lost years of my life to this game. Worth it."
+      },
+      {
+        "itemId": "toy-007",
+        "dateAdded": "2023-02-10T11:15:00Z",
+        "personalNote": "Had epic Beyblade battles in the school cafeteria."
+      },
+      {
+        "itemId": "toy-009",
+        "dateAdded": "2023-02-15T14:00:00Z",
+        "personalNote": "Still have my original Blue-Eyes White Dragon card."
+      }
+    ],
+    "following": ["user-001", "user-002", "user-004"],
+    "followers": ["user-001", "user-002", "user-005"]
+  },
+  {
+    "id": "user-004",
+    "username": "y2knostalgia",
+    "email": "y2k@example.com",
+    "birthYear": 1990,
+    "location": {
+      "country": "Australia",
+      "region": "Sydney"
+    },
+    "joinDate": "2023-02-10T07:30:00Z",
+    "collection": [
+      {
+        "itemId": "vg-007",
+        "dateAdded": "2023-02-11T16:20:00Z",
+        "personalNote": "Spent hours just driving around listening to the radio stations."
+      },
+      {
+        "itemId": "vg-009",
+        "dateAdded": "2023-02-14T19:45:00Z",
+        "personalNote": "The soundtrack introduced me to so many great bands."
+      },
+      {
+        "itemId": "toy-006",
+        "dateAdded": "2023-02-18T12:30:00Z",
+        "personalNote": "My sister had dozens of these. I secretly played with them too."
+      },
+      {
+        "itemId": "toy-008",
+        "dateAdded": "2023-02-22T15:15:00Z",
+        "personalNote": "Broke my arm trying to do tricks on this. No regrets."
+      }
+    ],
+    "following": ["user-001", "user-003", "user-005"],
+    "followers": ["user-003"]
+  },
+  {
+    "id": "user-005",
+    "username": "90sforever",
+    "email": "90sforever@example.com",
+    "birthYear": 1983,
+    "location": {
+      "country": "Japan",
+      "region": "Tokyo"
+    },
+    "joinDate": "2023-02-15T10:45:00Z",
+    "collection": [
+      {
+        "itemId": "vg-004",
+        "dateAdded": "2023-02-16T13:20:00Z",
+        "personalNote": "Started with Bulbasaur. Still the best starter."
+      },
+      {
+        "itemId": "vg-010",
+        "dateAdded": "2023-02-19T18:30:00Z",
+        "personalNote": "The Psycho Mantis fight blew my mind when he read my memory card."
+      },
+      {
+        "itemId": "toy-001",
+        "dateAdded": "2023-02-23T11:45:00Z",
+        "personalNote": "Had three of them on my keychain. Always died during school."
+      },
+      {
+        "itemId": "toy-004",
+        "dateAdded": "2023-02-26T15:00:00Z",
+        "personalNote": "Had the coolest slammer in school. Won so many pogs."
+      }
+    ],
+    "following": ["user-002", "user-003", "user-004"],
+    "followers": ["user-002", "user-004"]
+  }
+] 

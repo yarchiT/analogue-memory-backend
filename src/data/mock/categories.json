@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cat-001",
+    "name": "Video Games",
+    "description": "Console and PC games from the 90s and 2000s",
+    "imageUrl": "https://example.com/images/categories/video-games.jpg"
+  },
+  {
+    "id": "cat-002",
+    "name": "Toys",
+    "description": "Popular toys and action figures from the 90s and 2000s",
+    "imageUrl": "https://example.com/images/categories/toys.jpg"
+  },
+  {
+    "id": "cat-003",
+    "name": "TV Shows",
+    "description": "Television series that defined the 90s and 2000s",
+    "imageUrl": "https://example.com/images/categories/tv-shows.jpg"
+  },
+  {
+    "id": "cat-004",
+    "name": "Movies",
+    "description": "Iconic films from the 90s and 2000s",
+    "imageUrl": "https://example.com/images/categories/movies.jpg"
+  },
+  {
+    "id": "cat-005",
+    "name": "Music",
+    "description": "Albums, artists, and songs that shaped the 90s and 2000s",
+    "imageUrl": "https://example.com/images/categories/music.jpg"
+  },
+  {
+    "id": "cat-006",
+    "name": "Food & Snacks",
+    "description": "Nostalgic foods and snacks from the 90s and 2000s",
+    "imageUrl": "https://example.com/images/categories/food.jpg"
+  },
+  {
+    "id": "cat-007",
+    "name": "Fashion",
+    "description": "Clothing trends and styles from the 90s and 2000s",
+    "imageUrl": "https://example.com/images/categories/fashion.jpg"
+  }
+] 

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "toy-001",
+    "name": "Tamagotchi",
+    "description": "A handheld digital pet created in Japan by Bandai in 1996, one of the biggest toy fads of the late 1990s.",
+    "category": "cat-002",
+    "decade": "1990s",
+    "year": 1996,
+    "imageUrl": "https://example.com/images/items/tamagotchi.jpg",
+    "popularity": 94,
+    "tags": ["Digital Pet", "Bandai", "Electronic", "Japan"]
+  },
+  {
+    "id": "toy-002",
+    "name": "Beanie Babies",
+    "description": "A line of stuffed toys created by Ty Warner in 1993, notable for being a major collectible craze of the 1990s.",
+    "category": "cat-002",
+    "decade": "1990s",
+    "year": 1993,
+    "imageUrl": "https://example.com/images/items/beanie-babies.jpg",
+    "popularity": 96,
+    "tags": ["Plush", "Collectible", "Ty", "Stuffed Animals"]
+  },
+  {
+    "id": "toy-003",
+    "name": "Furby",
+    "description": "An electronic robotic toy released in 1998 by Tiger Electronics that became a must-have toy and cultural phenomenon.",
+    "category": "cat-002",
+    "decade": "1990s",
+    "year": 1998,
+    "imageUrl": "https://example.com/images/items/furby.jpg",
+    "popularity": 92,
+    "tags": ["Electronic", "Robot", "Tiger Electronics", "Interactive"]
+  },
+  {
+    "id": "toy-004",
+    "name": "Pogs",
+    "description": "A game that was popular among children during the mid-1990s, played with small discs originally used as milk bottle caps.",
+    "category": "cat-002",
+    "decade": "1990s",
+    "year": 1995,
+    "imageUrl": "https://example.com/images/items/pogs.jpg",
+    "popularity": 88,
+    "tags": ["Game", "Collectible", "Cardboard", "Playground"]
+  },
+  {
+    "id": "toy-005",
+    "name": "Super Soaker",
+    "description": "A brand of recreational water gun that uses manually pressurized air to shoot water, first released in 1990 by Larami.",
+    "category": "cat-002",
+    "decade": "1990s",
+    "year": 1990,
+    "imageUrl": "https://example.com/images/items/super-soaker.jpg",
+    "popularity": 91,
+    "tags": ["Water Gun", "Outdoor", "Summer", "Hasbro"]
+  },
+  {
+    "id": "toy-006",
+    "name": "Bratz Dolls",
+    "description": "A line of fashion dolls manufactured by MGA Entertainment that gained popularity in the early 2000s as an alternative to Barbie.",
+    "category": "cat-002",
+    "decade": "2000s",
+    "year": 2001,
+    "imageUrl": "https://example.com/images/items/bratz.jpg",
+    "popularity": 87,
+    "tags": ["Dolls", "Fashion", "MGA", "Girls"]
+  },
+  {
+    "id": "toy-007",
+    "name": "Beyblades",
+    "description": "A line of spinning top toys that originated in Japan and became popular worldwide in the early 2000s.",
+    "category": "cat-002",
+    "decade": "2000s",
+    "year": 2000,
+    "imageUrl": "https://example.com/images/items/beyblades.jpg",
+    "popularity": 89,
+    "tags": ["Spinning Tops", "Battle", "Takara Tomy", "Hasbro"]
+  },
+  {
+    "id": "toy-008",
+    "name": "Razor Scooter",
+    "description": "A compact folding kick scooter developed by Micro Mobility Systems and manufactured by JD Corporation, which became a global phenomenon in the early 2000s.",
+    "category": "cat-002",
+    "decade": "2000s",
+    "year": 2000,
+    "imageUrl": "https://example.com/images/items/razor-scooter.jpg",
+    "popularity": 93,
+    "tags": ["Scooter", "Outdoor", "Transportation", "Aluminum"]
+  },
+  {
+    "id": "toy-009",
+    "name": "Yu-Gi-Oh! Trading Cards",
+    "description": "A Japanese collectible card game based on the fictional game of Duel Monsters from the manga and anime franchise, which became popular worldwide in the early 2000s.",
+    "category": "cat-002",
+    "decade": "2000s",
+    "year": 2002,
+    "imageUrl": "https://example.com/images/items/yugioh-cards.jpg",
+    "popularity": 90,
+    "tags": ["Card Game", "Collectible", "Konami", "Anime"]
+  },
+  {
+    "id": "toy-010",
+    "name": "Tickle Me Elmo",
+    "description": "A stuffed Elmo toy that laughs when tickled, which became a major fad during the 1996 Christmas season.",
+    "category": "cat-002",
+    "decade": "1990s",
+    "year": 1996,
+    "imageUrl": "https://example.com/images/items/tickle-me-elmo.jpg",
+    "popularity": 95,
+    "tags": ["Plush", "Sesame Street", "Interactive", "Tyco"]
+  }
+] 

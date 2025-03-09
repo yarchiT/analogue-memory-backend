@@ -3,7 +3,7 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morganMiddleware from './middleware/morgan.middleware'
 import { errorHandler, notFound } from './middleware/error.middleware'
-import healthRoutes from './routes/health.routes'
+import routes from './routes'
 import logger from './utils/logger'
 
 // Initialize Express app
@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true })) // Parse URL-encoded bodies
 app.use(morganMiddleware) // HTTP request logging
 
 // Routes
-app.use('/health', healthRoutes)
+app.use('/', routes)
 
 // Handle 404 errors
 app.use(notFound)
